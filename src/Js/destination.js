@@ -71,5 +71,6 @@ if (city) {
 } else {
   cityName.textContent = "Unknown City";
   loading.classList.add("hidden");
-  errorBox.classList.remove("hidden");
 }
+
+document.querySelector("#weatherBtn").href = `weather.html?city=${city}`;
